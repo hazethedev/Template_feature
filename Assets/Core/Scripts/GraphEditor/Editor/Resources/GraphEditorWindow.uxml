@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Core/Scripts/StateMachine/Editor/GraphEditor/Resources/Styles/GraphEditorWindow.uss?fileID=7433441132597879392&amp;guid=9bf65a15782e0314badba4b06ff9d2a6&amp;type=3#GraphEditorWindow" />
+    <uie:Toolbar>
+        <uie:ToolbarMenu parse-escape-sequences="true" display-tooltip-when-elided="true" text="Assets" />
+    </uie:Toolbar>
+    <hazethedev.StateMachine.Editor.SplitView fixed-pane-initial-dimension="200">
+        <ui:VisualElement name="left-panel" style="flex-grow: 1;">
+            <ui:Label text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" name="label-inspector" style="-unity-font-style: normal; -unity-text-align: upper-left; font-size: 12px; background-color: rgba(25, 25, 25, 0.22); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; padding-left: 3px; -unity-font: ınitial;" />
+            <hazethedev.StateMachine.Editor.InspectorView />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1;">
+            <ui:Label text="Graph View" parse-escape-sequences="true" display-tooltip-when-elided="true" name="label-graph" style="-unity-font-style: normal; -unity-text-align: upper-left; font-size: 12px; background-color: rgba(25, 25, 25, 0.22); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; padding-left: 3px; -unity-font: ınitial;" />
+            <hazethedev.StateMachine.Editor.StateMachineGraphView focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </hazethedev.StateMachine.Editor.SplitView>
+</ui:UXML>

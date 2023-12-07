@@ -1,0 +1,10 @@
+.sm-node__text-field > .unity-text-field__input
+{
+    background-color: #1D1D1E;
+    border-color: #27292C;
+    border-radius: 4px;
+    max-width: 240px;
+    min-width: 160px;
+    padding: 8px;
+    white-space: normal;
+}
